@@ -14,10 +14,9 @@ Game or interactive application built with the Bevy engine.
 - Asset loading with progress tracking
 - Input handling abstraction
 - 2D camera setup (swap for 3D as needed)
-- Debug overlay (dev builds)
 - Strict Clippy lints
 - Optimized release builds
-- Fast compiles in dev (dynamic linking)
+- Fast compiles in dev (dynamic linking + LLD)
 
 ## Structure
 
@@ -46,10 +45,6 @@ Cargo.toml
 - bevy_asset_loader
 - rand (if needed)
 
-### Dev Dependencies
-
-- bevy (dynamic_linking feature for fast compiles)
-
 ## Architecture
 
 ```
@@ -61,25 +56,15 @@ States:  Loading → Menu → InGame ↔ Paused
 ## Commands
 
 ```sh
-cargo run                           # Dev (slow first compile)
-cargo run --features bevy/dynamic_linking  # Dev (fast recompiles)
-cargo build --release               # Release build
-cargo test                          # Tests
+cargo run                    # Dev build
+cargo run --features dev     # Dev with dynamic linking (fast recompiles)
+cargo build --release        # Release build
+cargo test                   # Tests
 ```
 
 ## Performance Tips
 
-- Use `--features bevy/dynamic_linking` during dev
-- Enable LTO only for release
+- Use `--features dev` during development for faster iteration
+- The `.cargo/config.toml` enables LLD linker for faster linking
+- Release builds use LTO for maximum optimization
 - Consider `bevy_embedded_assets` for distribution
-
-## TODO
-
-- [ ] Cargo.toml (with dynamic_linking feature)
-- [ ] src/main.rs (app builder, plugins)
-- [ ] src/states.rs
-- [ ] src/plugins/loading.rs
-- [ ] src/plugins/menu.rs
-- [ ] src/plugins/game.rs
-- [ ] Basic asset structure
-- [ ] .cargo/config.toml (fast compiles)
