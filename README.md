@@ -1,4 +1,4 @@
-# Bevy Template
+# 🎮 Bevy Template
 
 Game or interactive application built with the Bevy engine.
 
@@ -10,13 +10,13 @@ Game or interactive application built with the Bevy engine.
 
 ## Features
 
-- Game state management (Loading, Menu, InGame, Paused)
-- Asset loading with progress tracking
-- Input handling abstraction
-- 2D camera setup (swap for 3D as needed)
-- Strict Clippy lints
-- Optimized release builds
-- Fast compiles in dev (dynamic linking + LLD)
+- 🎮 **Game state management**: Loading, Menu, InGame, Paused
+- 📦 **Asset loading**: Progress tracking with bevy_asset_loader
+- ⌨️ **Input handling**: Abstracted input system
+- 📷 **2D camera setup**: Swap for 3D as needed
+- 🔒 **Strict Clippy lints**: Pedantic linting enabled
+- ⚡ **Optimized builds**: LTO for release builds
+- 🚀 **Fast dev compiles**: Dynamic linking + LLD
 
 ## Structure
 
@@ -68,3 +68,7 @@ cargo test                   # Tests
 - The `.cargo/config.toml` enables LLD linker for faster linking
 - Release builds use LTO for maximum optimization
 - Consider `bevy_embedded_assets` for distribution
+
+## License
+
+The code in this repository is licensed under MIT, © [Omni LLC](https://omni.dev). See [LICENSE.md](LICENSE.md) for more information.
