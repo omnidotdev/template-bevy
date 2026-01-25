@@ -1,19 +1,19 @@
 [package]
-name = "{{project-name}}"
+name = "template-bevy"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.85"
 authors = ["Omni <team@omni.dev>"]
-description = "{{description}}"
+description = "Bevy game template"
 license = "MIT"
-repository = "https://github.com/omnidotdev/{{project-name}}"
-homepage = "https://{{project-name}}.omni.dev"
+repository = "https://github.com/omnidotdev/template-bevy"
+homepage = "https://template-bevy.omni.dev"
 keywords = ["game", "bevy"]
 categories = ["games"]
 readme = "README.md"
 
 [[bin]]
-name = "{{binary-name}}"
+name = "template-bevy"
 path = "src/main.rs"
 
 [dependencies]

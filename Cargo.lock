@@ -614,17 +614,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bevy_game"
-version = "0.1.0"
-dependencies = [
- "bevy",
- "bevy_asset_loader",
- "rand",
- "thiserror 2.0.18",
- "tracing",
-]
-
-[[package]]
 name = "bevy_gilrs"
 version = "0.15.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3946,6 +3935,17 @@ dependencies = [
  "num-traits",
  "serde",
  "slotmap",
+]
+
+[[package]]
+name = "template-bevy"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "bevy_asset_loader",
+ "rand",
+ "thiserror 2.0.18",
+ "tracing",
 ]
 
 [[package]]
