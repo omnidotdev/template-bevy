@@ -4,9 +4,9 @@ Game or interactive application built with the Bevy engine.
 
 ## Stack
 
-- **Engine**: Bevy 0.15+
-- **ECS**: Entity Component System (Bevy's core paradigm)
-- **Assets**: bevy_asset_loader for state-based loading
+- 🎮 **Engine**: Bevy 0.15+
+- 🧩 **ECS**: Entity Component System (Bevy's core paradigm)
+- 📦 **Assets**: bevy_asset_loader for state-based loading
 
 ## Features
 
