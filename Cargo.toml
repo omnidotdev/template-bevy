@@ -17,7 +17,7 @@ name = "template-bevy"
 path = "src/main.rs"
 
 [dependencies]
-bevy = "0.15"
+bevy = "0.18"
 bevy_asset_loader = { version = "0.22", features = ["2d"] }
 rand = "0.8"
 thiserror = "2"
