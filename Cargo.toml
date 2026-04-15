@@ -18,7 +18,7 @@ path = "src/main.rs"
 
 [dependencies]
 bevy = "0.15"
-bevy_asset_loader = { version = "0.22", features = ["2d"] }
+bevy_asset_loader = { version = "0.26", features = ["2d"] }
 rand = "0.8"
 thiserror = "2"
 tracing = "0.1"
